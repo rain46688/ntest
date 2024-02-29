@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./globals.css";
 
 export const metadata = {
@@ -9,10 +10,10 @@ export default function RootLayout({ children }) {
   return (
     <html>
       <body>
-      <h1><a href="/">AssetInvader</a></h1>
+      <h1><Link href="/">AssetInvader</Link></h1>
       <ol>
-        <li><a href="/menu/1">유형별 자산관리</a></li>
-        <li><a href="/menu/2">분류별 자산관리</a></li>
+        <li><Link href="/menu/1">유형별 자산관리</Link></li>
+        <li><Link href="/menu/2">분류별 자산관리</Link></li>
       </ol>
       {children}
       </body>

@@ -14,7 +14,6 @@ export default function MenuPage(props) {
 
     return (
         <div>
-            <h3>Menu Id : {props.params.id}</h3>
             <ComponentPage />
         </div>
     );
